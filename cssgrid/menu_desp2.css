@@ -1,0 +1,72 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+
+/* modificar el aspecto y posición del nav */
+.menu-contenedor{
+    inline-size: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.menu-contenedor ul{
+    list-style: none;
+}
+.menu>li{
+    display: inline-block;
+    text-align: center;
+}
+.menu>li>a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 25px;
+
+    color: gray;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+}
+/* propiedad hover menu principal */
+.menu>li>a:hover{
+    color: white;
+    background-color: rgb(30, 30, 30);
+    transition: all 0.5s;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.submenu>li>a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 25px;
+
+    color: black;
+    background-color: aliceblue;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+}
+
+/* propiedad hover menu secundario */
+.submenu li a:hover{
+    color: white;
+    background-color: rgb(30, 30, 30);
+    transition: all 0.5s;
+}
+
+.menu>li:hover .submenu{
+    display: block;
+}
+
+@media screen and (min-width: 480px) {
+    nav ul li{
+      display: flex;
+    }
+  }
+
+
