@@ -1,0 +1,131 @@
+/* colors */
+/* colores oscuros
+verdes 
+#1B5E20 - #33691E
+#2E7D32 - #558B2F
+claros
+#43A047 - #7CB342
+#66BB6A - #9CCC65
+#00C853 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background: #093028;
+    background: -webkit-linear-gradient(to right, #237A57, #093028);
+    background: linear-gradient(to right, #237A57, #093028);
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position: relative; /*posicionar para colocar absolute el btn Cerrar*/
+    padding: 1.8em; /*activar al final*/
+    overflow: scroll;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0; /* lo podemos usar para unir el espaciod e los bordes*/
+}
+table td, table th{
+    /* border: 1px solid black; */
+    padding: 1em;
+    text-align: left;
+}
+.impar{
+    background-color: #66BB6A;
+}
+.fa-thin{
+    color: darkgreen;
+}
+
+.parrafo{
+    line-height: 1.8em; /*altura de la línea*/
+}
+.main-img{
+float: left; /*El texto fluye a la izquierda*/
+margin-right: 1em; /*separar el texto de la imagen*/
+height: 240px;
+}
+
+a{
+    text-decoration: none;
+    color: #1B5E20;
+}
+
+a:hover{
+opacity: 0.8; /*usar valores de 0 a 1*/
+}
+
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.title-item{
+    border-bottom: 2px solid #1B5E20 ;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+.position{
+    background-color: #1B5E20;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    /* aplicamos margin para separar el número del título */
+    margin-right: 0.5em;
+}
+.btnCerrar{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.cerrar{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #1B5E20;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* final - aplicación media queries */
+@media (max-width:600px){
+    .contenedor{
+        padding: 1em;
+    }
+    td{
+        display: block;
+    }
+    /* usar pseudoclase para seleccionar un elemento al lado de otro tipo */
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #1B5E20;
+        /* background-color: rebeccapurple; */
+    }
+    th{
+        display: none;
+    }
+}
+
+/* imagenes */
